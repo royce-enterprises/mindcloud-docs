@@ -1,32 +1,25 @@
-# MindCloud
+# MindCloud Channels Documentation
 
-Summary... 
+MindCloud Channels is an eCommerce platform to automate and synchronize the creation of orders, cancellation of orders, inventory and shipment tracking. While there is not yet a public API, this documentats the main API jobs and the expected body for each. Channel connections can be made via API (JSON / XML) or FTP (Delmited / XML / EDI). 
+## Create Orders API
+This retrieves orders from a destination retail site maps to our standard Order object and then is created in the source ERP, CRM or database. New orders from the vendor are queried for, received and mapped into a standard order object.
 
-## Major Jobs
-
-There are 3 standard jobs done between any eCommerce site and a database. These are:
-
-- Create Orders: description.
-- Forgot: description
-- Update Shipments: description.
-
-### Create Orders
-
-New orders from the vendor are queried for, received and mapped into a standard order object.
-
-- [Order Object](/order-object.md)
+- [Order Object Documentation](/order-object.md)
 
 This standard object is then sent to the internal database connector (such as Salesforce) and persisted. The third party vendor is then acknowleged.
 
-### Credit Stock
+## Cancel Order API
+An order that is marked as cancelled in the source system is then updated in the destination site as cancelled. 
 
-...
+- [Cancel Object Documentation](/cancel-object.md)
 
-### Update Shipments
+## Credit Stock API
 
-...
+Inventory stock information from the source system is updated by SKU in all destination retail sites with matching SKUs.
 
+- [Inventory Object Documentation](/inventory-object.md)
 
-## Additional Jobs
+## Update Shipments API
+When an order is fulfilled, the shipment tracking information, shipment date and method is updated in the destination retail site.
 
-### Cancel Orders
+- [Shipment Object Documentation](/shipment-object.md)
