@@ -13,10 +13,11 @@ Inventory is retrieved from the source system and mapped to the following standa
 }
 ```  
 ### Field Definitions
-
-- id: Primary key of the source inventory record
-- sku: SKU of this product
-- description: Product description
-- availableQuantity: Available quantity of this SKU
-- name: Name of product
-- lastModified: Date this inventory was last updated
+| Field | Description |
+| ----------- | ----------- |
+| id | Primary key of the source inventory record |
+| sku | SKU of this product |
+| description | Product description |
+| availableQuantity | Available quantity of this SKU |
+| name | Name of product |
+| lastModified | Date this inventory was last updated |

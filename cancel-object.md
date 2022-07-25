@@ -8,5 +8,6 @@ An order that is marked as cancelled in the source system is retrieved and then 
 }
 ```  
 ### Field Definitions
-
-- purchaseOrderId: The purchase order Id of the cancelled order
+| Field | Description |
+| ----------- | ----------- |
+| purchaseOrderId | The purchase order Id of the cancelled order |
