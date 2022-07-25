@@ -1,6 +1,6 @@
 # MindCloud Channels Documentation
 
-MindCloud Channels is an eCommerce platform to automate and synchronize the creation of orders, cancellation of orders, inventory and shipment tracking. While there is not yet a public API, this documentats the main API jobs and the expected body for each. Channel connections can be made via API (JSON / XML) or FTP (Delmited / XML / EDI). 
+MindCloud Channels is an eCommerce platform to automate and synchronize the creation of orders, cancellation of orders, inventory and shipment tracking. While there is not yet a public API, this documents the main API jobs and the expected body for each. 
 ## Create Orders API
 This retrieves orders from a destination retail site maps to our standard Order object and then is created in the source ERP, CRM or database. New orders from the vendor are queried for, received and mapped into a standard order object.
 
