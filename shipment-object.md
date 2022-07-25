@@ -4,26 +4,26 @@ Shipment is marked in the source system and is then mapped to the standard shipm
 
 ```
 {
-    "order" | {order-object},
-    "orderShipment" | {
-        "orderLines" | [{
-            "orderLine" | {
-                "lineNumber" | "string",
-                "merchantLineNumber" | "string",
-                "sku" | "string",
-                "quantity" | "string",
-                "sellerOrderId" | "string",
-                "orderLineStatuses" | [{
-                    "orderLineStatus" | {
-                        "status" | "string",
-                        "trackingInfo" | {
-                            "shipDateTime" | "string",
-                            "carrierName" | {
-                                "carrier" | "string",
+    "order": {order-object},
+    "orderShipment": {
+        "orderLines": [{
+            "orderLine": {
+                "lineNumber": "string",
+                "merchantLineNumber": "string",
+                "sku": "string",
+                "quantity": "string",
+                "sellerOrderId": "string",
+                "orderLineStatuses": [{
+                    "orderLineStatus": {
+                        "status": "string",
+                        "trackingInfo": {
+                            "shipDateTime": "string",
+                            "carrierName": {
+                                "carrier": "string",
                             },
-                            "methodCode" | "string",
-                            "trackingNumber" | "string",
-                            "trackingURL" | "string",
+                            "methodCode": "string",
+                            "trackingNumber": "string",
+                            "trackingURL": "string",
                         },
                     },
                 }]

@@ -2,68 +2,68 @@
 
 ```
 {
-    "id" | "string",
-    "purchaseOrderId" | "string",
-    "customerOrderId" | "string",
-    "customerEmailId" | "string",
-    "transactionId" | "string",
-    "orderDate" | "string",
-    "vendorReference" | "string",
-    "lines" | [
+    "id": "string",
+    "purchaseOrderId": "string",
+    "customerOrderId": "string",
+    "customerEmailId": "string",
+    "transactionId": "string",
+    "orderDate": "string",
+    "vendorReference": "string",
+    "lines": [
         {
-            "index" | "string",
-            "merchantLineItemNo" | "string",
-            "primaryKey" | "string",
-            "item" | {
-                "primaryKey" | "string",
-                "productName" | "string",
-                "sku" | "string",
-                "retailSalesPrice" | "string",
-                "retailCommissionValue" | 0,
-                "retailCommissionRate" | "string",
-                "netProceeds" | "string",
-                "currency" | "string",
-                "amount" | "string"
+            "index": "string",
+            "merchantLineItemNo": "string",
+            "primaryKey": "string",
+            "item": {
+                "primaryKey": "string",
+                "productName": "string",
+                "sku": "string",
+                "retailSalesPrice": "string",
+                "retailCommissionValue": 0,
+                "retailCommissionRate": "string",
+                "netProceeds": "string",
+                "currency": "string",
+                "amount": "string"
             },
-            "charges" | [
+            "charges": [
                 {
-                    "type" | "string",
-                    "name" | "string",
-                    "currency" | "string",
-                    "taxName" | "string",
-                    "taxCurrency" | "string",
-                    "taxAmount" | "string"
+                    "type": "string",
+                    "name": "string",
+                    "currency": "string",
+                    "taxName": "string",
+                    "taxCurrency": "string",
+                    "taxAmount": "string"
                 }
             ],
-            "quantity" | "string",
-            "statusDate" | "string",
-            "statuses" | {
-                "status" | "string",
-                "quantity" | "string",
-                "amount" | "string",
-                "cancellationReason" | "string"
+            "quantity": "string",
+            "statusDate": "string",
+            "statuses": {
+                "status": "string",
+                "quantity": "string",
+                "amount": "string",
+                "cancellationReason": "string"
             }
         }
     ],
-    "shippingInfo" | {
-        "phone" | "string",
-        "email" | "string",
-        "estimatedDeliveryDate" | "string",
-        "estimatedShipDate" | "string",
-        "methodCode" | "string",
-        "postalAddress" | {
-            "name" | "string",
-            "address1" | "string",
-            "address2" | "string",
-            "city" | "string",
-            "state" | "string",
-            "stateName" | "string",
-            "postalCode" | "string",
-            "country" | "string",
-            "addressType" | "string"
+    "shippingInfo": {
+        "phone": "string",
+        "email": "string",
+        "estimatedDeliveryDate": "string",
+        "estimatedShipDate": "string",
+        "methodCode": "string",
+        "postalAddress": {
+            "name": "string",
+            "address1": "string",
+            "address2": "string",
+            "city": "string",
+            "state": "string",
+            "stateName": "string",
+            "postalCode": "string",
+            "country": "string",
+            "addressType": "string"
         }
     },
-    "shipNode" | "string"
+    "shipNode": "string"
 }
 ```  
 ### Field Definitions
